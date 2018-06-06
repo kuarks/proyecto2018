@@ -90,6 +90,14 @@ body a:hover {
     color: rgba(0,0,0,.9);
 }
 
+.white {
+    color: #fff;
+}
+
+.p-space {
+    margin-bottom: 30px;
+}
+
 .btn {
     font-size: .8em;
 }
