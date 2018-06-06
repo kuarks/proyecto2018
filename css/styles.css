@@ -1,0 +1,156 @@
+body {
+    background-color: #30336B;
+    color: #fff;
+    height: 100vh;
+    font-family: Poppins;
+}
+
+body a:hover {
+    text-decoration: none;
+}
+
+.logo-text a{
+    -webkit-transition-duration: 500ms;
+    -o-transition-duration: 500ms;
+    transition-duration: 500ms;
+}
+
+.logo-text a:hover {
+    color:rgba(0,0,0,.5) !important;
+}
+
+#burger{
+    color: rgba(0,0,0,.7);
+    cursor: pointer;
+    -webkit-transition-duration: 500ms;
+    -o-transition-duration: 500ms;
+    transition-duration: 500ms;
+}
+
+#burger:hover{
+    color:#fff;
+}
+
+#facebook-button{
+    color:#fff;
+    cursor: pointer;
+    -webkit-transition-duration: 500ms;
+    -o-transition-duration: 500ms;
+    transition-duration: 500ms;
+}
+
+#facebook-button:hover{
+    color: rgba(0,0,0,.5);
+}
+
+#top-menu {
+    background-color: #30336B;
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    z-index: 1;
+}
+
+#logo {
+    font-family: PoppinsBold;
+}
+
+.icons {
+    color: #FFC312;
+}
+
+.eje {
+    min-height: 240px;
+    background-color: rgba(0,0,0,.1);
+    padding: 2em;
+}
+.logo-text {
+    margin-left: .6em;
+    font-size: 1.5em;
+}
+
+.sociak-top {
+    float: right;
+}
+
+#facebook-button{
+    font-size: 1.6em;
+}
+
+
+.subject {
+    margin-bottom: 3em;
+}
+
+#hero h1 {
+    font-family: PoppinsBold;
+}
+
+.black {
+    color: rgba(0,0,0,.5);
+    font-size: 1.46em;
+}
+
+.btn {
+    font-size: .8em;
+}
+
+
+.badge-dark {
+    background-color: rgba(0,0,0,.5);
+    padding: 6px;
+}
+
+.p-link {
+    color: #FFC312;
+}
+
+#avatar {
+    opacity: .8;
+}
+
+footer {
+    min-height: 200px;
+}
+
+/* Fonts */
+
+@font-face {
+    font-family: Poppins;
+    src: url('fonts/Poppins.woff2');
+}
+@font-face {
+    font-family: PoppinsBold;
+    src: url('fonts/Poppins Bold.woff2');
+}
+@font-face {
+    font-family: IBMPlex;
+    src: url('fonts/IBM Plex.woff2');
+}
+@font-face {
+    font-family: IBMPlexBold;
+    src: url('fonts/IBM Plex Bold.woff2');
+}
+@font-face {
+    font-family: IBMPlexItalic;
+    src: url('fonts/IBM Plex Italic.woff2');
+}
+@font-face {
+    font-family: BrandonGrotesque;
+    src: url('fonts/Brandon Grotesque.otf');
+}
+
+/* Media Queries */
+
+
+/* Mobile */
+@media (max-width: 900px) {
+    .logo-text {
+        font-size: 1em;
+    }
+}
+
+/* Medium */
+@media (max-width: 1190px) {
+
+}
