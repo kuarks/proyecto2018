@@ -51,6 +51,10 @@ var burger = document.querySelector('#burger');
 var close = document.querySelector('#close-menu');
 var form = document.querySelector('#formFor');
 
+div.addEventListener('click', function () {
+    div.style.display = 'none';
+});
+
 close.addEventListener('click', function () {
     div.style.display = 'none';
 });
@@ -60,12 +64,12 @@ burger.addEventListener('click', function () {
     div.style.backgroundColor = '#000';
 });
 
-form.addEventListener("submit", function (e) {
+form.addEventListener("submit", function () {
     var message = document.querySelector('#feedback').value;
 
     if (message === '') {
-        e.preventDefault()
         alert('El mensaje no puede ir vacio.');
+        return false;
     } else {
         // Message deliver with formfor
         message.value = "";

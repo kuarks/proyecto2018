@@ -39,6 +39,9 @@ var burger = document.querySelector('#burger');
 let close = document.querySelector('#close-menu');
 let form = document.querySelector('#formFor');
 
+div.addEventListener('click', () => {
+    div.style.display = 'none'
+})
 
 close.addEventListener('click', () => {
     div.style.display = 'none'
