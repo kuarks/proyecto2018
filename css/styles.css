@@ -87,8 +87,7 @@ body a:hover {
 }
 
 .black {
-    color: rgba(0,0,0,.5);
-    font-size: 1.46em;
+    color: rgba(0,0,0,.9);
 }
 
 .btn {
@@ -111,6 +110,107 @@ body a:hover {
 
 footer {
     min-height: 200px;
+}
+
+#feedback {
+    resize: none;
+    border-radius: 2px; 
+    border:none; 
+    background-color: rgba(0, 0, 0, .3);
+    color: #FFC312;
+}
+
+#feedback:focus {
+    box-shadow: 1px 1px 0 , -1px -1px 0 #FFC312;
+}
+
+.title {
+    font-family: IBMPlexBold;
+}
+
+/* Bullets */
+
+ol {
+    list-style: none;
+}
+ol li {
+    margin-bottom: .5em;
+    counter-increment: item;
+}
+
+ol li:before{
+    content: counter(item)'.';
+    color: #fff;
+    margin-right: 13px;
+    text-align: center;
+    font-family: IBMPlexBold;
+    font-size: 1.5em;
+}
+
+ol.alpha li {
+    margin-bottom: .5em;
+    counter-increment: alpha;
+}
+
+ol.alpha li:before{
+    content: counter(alpha, lower-alpha)' )';
+    color: #fff;
+    margin-right: 13px;
+    text-align: center;
+    font-family: IBMPlexBold;
+    font-size: 1.5em;
+}
+
+/* Modal menu */
+
+#modal {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0);
+    z-index: 1;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 3em;
+    display: none;
+}
+
+#modal ul {
+    margin-top: 4em;
+    list-style: none;
+}
+#modal li:before{
+    content: '-';
+    color: #fff;
+    font-family: PoppinsBold;
+    margin-right: .5em;
+}
+#modal li {
+    margin-bottom: .6em;
+}
+
+#modal a {
+    text-decoration: none;
+    color: #FFC312;
+    font-size: 1.7em;
+    font-family: PoppinsBold;
+    -webkit-transition-duration: 400ms;
+    -o-transition-duration: 400ms;
+    transition-duration: 400ms;
+}
+#modal a:hover{
+    color: #fff;
+}
+
+#close-menu {
+    cursor: pointer;
+    color: #fff;
+    font-size: 2em;
+}
+
+.page-title {
+    color: rgba(0,0,0,.9);
+    font-family: PoppinsBold;
 }
 
 /* Fonts */

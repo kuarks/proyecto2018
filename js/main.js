@@ -37,6 +37,8 @@ logo.addEventListener('click', () => {
 var div = document.querySelector('#modal');
 var burger = document.querySelector('#burger');
 let close = document.querySelector('#close-menu');
+let form = document.querySelector('#formFor');
+
 
 close.addEventListener('click', () => {
     div.style.display = 'none'
@@ -46,3 +48,7 @@ burger.addEventListener('click', () => {
     div.style.display = 'block' 
     div.style.backgroundColor = '#000'
 })
+
+form.addEventListener("submit", () => {
+    document.querySelector('#feedback').value = ""
+});
