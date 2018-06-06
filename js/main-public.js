@@ -60,6 +60,14 @@ burger.addEventListener('click', function () {
     div.style.backgroundColor = '#000';
 });
 
-form.addEventListener("submit", function () {
-    document.querySelector('#feedback').value = "";
+form.addEventListener("submit", function (e) {
+    var message = document.querySelector('#feedback').value;
+
+    if (message === '') {
+        e.preventDefault()
+        alert('El mensaje no puede ir vacio.');
+    } else {
+        // Message deliver with formfor
+        message.value = "";
+    }
 });

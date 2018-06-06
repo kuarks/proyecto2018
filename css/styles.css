@@ -1,3 +1,18 @@
+.example {
+    display: -ms-grid;
+    display: grid;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(black));
+    background: -webkit-linear-gradient(top, white, black);
+    background: -o-linear-gradient(top, white, black);
+    background: linear-gradient(to bottom, white, black);
+}
 body {
     background-color: #30336B;
     color: #fff;
@@ -129,7 +144,8 @@ footer {
 }
 
 #feedback:focus {
-    box-shadow: 1px 1px 0 , -1px -1px 0 #FFC312;
+    -webkit-box-shadow: 1px 1px 0 , -1px -1px 0 #FFC312;
+            box-shadow: 1px 1px 0 , -1px -1px 0 #FFC312;
 }
 
 .title {

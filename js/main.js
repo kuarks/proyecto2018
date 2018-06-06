@@ -50,5 +50,13 @@ burger.addEventListener('click', () => {
 })
 
 form.addEventListener("submit", () => {
-    document.querySelector('#feedback').value = ""
+    let message = document.querySelector('#feedback').value;
+
+    if(message === ''){
+        alert('El mensaje no puede ir vacio.');
+        return false;
+    }else {
+        // Message deliver with formfor
+        message.value = ""
+    }
 });
